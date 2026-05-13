@@ -1,0 +1,77 @@
+\setbeamertemplate{caption label separator}{. }
+\setbeamerfont{caption}{size=\tiny}
+
+\begin{frame}[t]
+\vspace{1mm} % Slightly down from the top red line
+\frametitle{Experimental Setup and Results}
+
+% SECTION 1: Experimental Setup
+\textcolor{red}{\footnotesize$\blacktriangleright$} \textbf{\footnotesize Experimental Setup}
+\begin{itemize}[leftmargin=1.5em, itemsep=0.1em, topsep=0.1em, label=\textcolor{blue!70!black}{\tiny$\bullet$}]
+    \footnotesize
+    \item Environment: Python 3.10, NVIDIA A100 GPU (Train \& Infer: Qwen-32B-Instruct).
+    \item Dataset: OARelatedWork \cite{docekal2024oarelatedwork}.
+    \item Metrics: LLM-as-a-Judge (inc. Coverage, Logic, Relevance) \cite{liu2025select}.
+    \item Baselines: PRIMERA \cite{xiao2022primera}, GPT-4o, Select-RW \cite{liu2025select}.
+\end{itemize}
+
+\vspace{0mm} % Tightened spacing
+
+% SECTION 2: Results
+\textcolor{red}{\footnotesize$\blacktriangleright$} \textbf{\footnotesize Results}
+\vspace{-6mm} % Pull the entire table block up
+
+\begin{columns}[T]
+    % LEFT COLUMN: Table 1 (Narrower)
+    \begin{column}{0.42\textwidth}
+        \begin{table}[H]
+            \caption{Effectiveness}
+            \centering
+            \tiny
+            \vspace{-1.5mm} % Close gap to caption
+            \begin{tabular}{l c c c c c}
+            \toprule
+            \textbf{Model} & \textbf{Cov.} & \textbf{Log.} & \textbf{Rel.} & \textbf{Avg.} & \textbf{Tok.} \\
+            \midrule
+            PRIMERA & 2.48 & 2.71 & 3.02 & 2.64 & 186K \\
+            GPT-4o & 3.18 & 4.08 & 3.96 & 3.36 & 2.1K \\
+            Select-RW & 3.36 & 4.21 & 4.18 & 3.53 & 186K \\
+            \midrule
+            \textbf{CREW} & \textbf{3.62} & \textbf{4.39} & \textbf{4.31} & \textbf{3.77} & \textbf{153K} \\
+            \bottomrule
+            \end{tabular}
+        \end{table}
+    \end{column}
+    
+    % RIGHT COLUMN: Table 2 (Wider for delta values)
+    \begin{column}{0.57\textwidth}
+        \begin{table}[H]
+            \caption{Ablation Study}
+            \centering
+            \tiny
+            \vspace{-1.5mm} % Close gap to caption
+            \begin{tabular}{l c c c c c}
+            \toprule
+            \textbf{Config} & \textbf{Cov.} & \textbf{Log.} & \textbf{Rel.} & \textbf{Avg.} & \textbf{Tok.} \\
+            \midrule
+            w/o Draft & 3.41 {\color{red}\tiny(-.21)} & 4.02 {\color{red}\tiny(-.37)} & 4.10 {\color{red}\tiny(-.21)} & 3.50 {\color{red}\tiny(-.27)} & 150K \\
+            w/o Crit. & 3.35 {\color{red}\tiny(-.27)} & 4.08 {\color{red}\tiny(-.31)} & 4.02 {\color{red}\tiny(-.29)} & 3.42 {\color{red}\tiny(-.35)} & 143K \\
+            w/o BB. & 3.29 {\color{red}\tiny(-.33)} & 3.95 {\color{red}\tiny(-.44)} & 3.98 {\color{red}\tiny(-.33)} & 3.35 {\color{red}\tiny(-.42)} & 160K \\
+            \midrule
+            \textbf{CREW} & \textbf{3.62} & \textbf{4.39} & \textbf{4.31} & \textbf{3.77} & \textbf{153K} \\
+            \bottomrule
+            \end{tabular}
+        \end{table}
+    \end{column}
+\end{columns}
+
+\vfill
+\slidesources{%
+    \parbox{\textwidth}{%
+        \fontsize{5pt}{6pt}\selectfont\color{gray}%
+        \hyperlink{refs}{\cite{docekal2024oarelatedwork} \fullcite{docekal2024oarelatedwork}}\\[1pt]%
+        \hyperlink{refs}{\cite{xiao2022primera} \fullcite{xiao2022primera}}\\[1pt]%
+        \hyperlink{refs}{\cite{liu2025select} \fullcite{liu2025select}}%
+    }%
+}
+\end{frame}

@@ -1,0 +1,30 @@
+\begin{frame}[t]
+\vspace{-2mm}
+\frametitle{Problem Formulation}
+
+\begin{itemize}
+    \item \textbf{Input:} $I = \langle \mathcal{T}_C, \mathcal{A}_C, \mathcal{R} \rangle$ 
+    \begin{itemize}
+        \item $\mathcal{T}_C$: Target Title
+        \item $\mathcal{A}_C$: Target Abstract
+        \item $\mathcal{R}$: List of reference papers, where each $p \in \mathcal{R}$ is represented as $p = \langle id_p, title_p, abstract_p \rangle$.
+    \end{itemize}
+    
+    \vspace{0.5cm}
+    
+    \item \textbf{Output:} $O = \langle D_{final} \rangle$
+    \begin{itemize}
+        \item The final, coherent, and appropriately cited Related Work draft
+    \end{itemize}
+    
+    \vspace{0.5cm}
+    
+    \item \textbf{Objective:} Optimize generation quality, grounding, and efficiency
+    \begin{itemize}
+        \item Improve \textbf{Coverage}, \textbf{Logic}, \textbf{Relevance}, \textbf{Citation Quality} of a Related Work.
+        \item Maximize \textbf{Citation Accuracy}.
+        \item Improve \textbf{token efficiency} and \textbf{inference efficiency}.
+    \end{itemize}
+\end{itemize}
+
+\end{frame}

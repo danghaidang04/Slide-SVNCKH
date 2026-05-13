@@ -1,0 +1,5 @@
+Slide 1: Intro (10 giây): Tên đề tài, mã đề tài, danh sách thành viên và Giảng viên hướng dẫn. 
+Slide 2: Problem Statement - Vấn đề giải quyết (1 phút): Bài toán thực tế hoặc khoảng trống nghiên cứu (research gap) các bạn đang giải quyết là gì? Tại sao nó cấp thiết? 
+Slide 3 & 4: Solution & Architecture - Giải pháp & Kiến trúc lõi (2 phút): Đóng góp mới của nhóm là gì? (Ví dụ: Kiến trúc hệ thống, mô hình đề xuất, cải tiến thuật toán). Trình bày rõ ràng qua sơ đồ khối/lưu đồ. Tuyệt đối không giải thích các khái niệm nền tảng (Ví dụ: Không định nghĩa LLM, Blockchain, AI, IoT... là gì). 
+Slide 5 & 6: Metrics & Results - Kết quả & Đánh giá (1.5 phút): Chứng minh tính hiệu quả của giải pháp. Đưa ra các biểu đồ, con số đo lường cụ thể (Precision, Recall, tốc độ, độ trễ, v.v.) và so sánh với các phương pháp/baseline hiện có. 
+Slide 7: Conclusion - Kết luận (30 giây): Tóm tắt 1-2 giá trị lớn nhất đề tài mang lại và hướng phát triển (nếu có).

@@ -1,0 +1,278 @@
+
+% ===== Slide 1 (fixed to fit) =====
+\begin{frame}{Description of Notations (1/2)}
+\vspace{-1cm}
+\small
+\renewcommand{\arraystretch}{1.2}   % lower row height
+\setlength{\tabcolsep}{4pt}          % tighter column padding
+\centering
+\noindent\makebox[\textwidth][c]{%
+{\footnotesize
+\begin{tabular}{|L{0.30\textwidth}|C{0.36\textwidth}|L{0.28\textwidth}|}
+\hline
+\textbf{Subjects} & \textbf{Notation} & \textbf{Description}\\
+\hline
+\multirow{8}{*}{\textbf{LLM Block}}
+ & $K_{\max}$            & Global token–cost budget.\\ \cline{2-3}
+ & $\mu_{\text{cache}}$  & Private cache size for retrieved text.\\ \cline{2-3}
+ & $\alpha_{\text{in}}$  & Cost per input token.\\ \cline{2-3}
+ & $\alpha_{\text{out}}$ & Cost per output token.\\ \cline{2-3}
+ & $T$                   & Sampling temperature, $T\!\in\![0,\infty)$.\\ \cline{2-3}
+ & $\rho$                & Mixing/decay ratio, $\rho\!\in\![0,1]$.\\ \cline{2-3}
+ & $t_{\text{in}}(t)$    & Input tokens at step $t$.\\ \cline{2-3}
+ & $t_{\text{out}}(t)$   & Output tokens at step $t$.\\
+\hline
+\end{tabular}
+}%
+}
+\end{frame}
+
+
+
+\begin{frame}{Description of Notations (2/2)}
+\vspace{-1cm}
+\small
+\renewcommand{\arraystretch}{1.2}
+\setlength{\tabcolsep}{4pt}
+
+\noindent\makebox[\textwidth][c]{%
+\begin{tabular}{|L{0.30\textwidth}|C{0.45\textwidth}|L{0.20\textwidth}|}
+\hline
+\textbf{Subjects} & \textbf{Notation} & \textbf{Description}\\
+\hline
+\multirow{4}{*}{\textbf{System Block}}
+ & $\theta_{\text{LLM}}$ & Model parameters / configuration.\\ \cline{2-3}
+ & $\tau$                & Latency or inference time.\\ \cline{2-3}
+ & $\beta$               & Cost adjustment coefficient.\\ \cline{2-3}
+ & $C(t)$                & Total cost at time step $t$.\\
+\hline
+\multirow{2}{*}{\textbf{Cost \& Constraints}}
+ & \(\displaystyle C(t)=\alpha_{\text{in}}\,t_{\text{in}}(t)+\alpha_{\text{out}}\,t_{\text{out}}(t)\)
+   & Token–cost model.\\ \cline{2-3}
+ & {\scriptsize \(\displaystyle \sum_{t=1}^{T_{\max}} C(t)\le K_{\max}\)}
+   & Budget constraint.\\
+\hline
+\end{tabular}%
+}
+\end{frame}
+
+    
+
+\begin{frame}{State Space for Multi-Agent RWG (DEC-POSMDP)}
+\vspace{-10mm}
+\small
+
+We write each global state as
+\[
+s = \big\langle
+  D_{\mathrm{pool}},
+  D_{\mathrm{draft}},
+  D_{\mathrm{outline}},
+  M_{\mathrm{cache}},
+  H_{\mathrm{int}}
+\big\rangle,
+\]
+and the state space as
+\[
+\mathcal{S}
+= \mathcal{D}_{\mathrm{pool}}
+  \times \mathcal{D}_{\mathrm{draft}}
+  \times \mathcal{D}_{\mathrm{outline}}
+  \times \mathcal{M}_{\mathrm{cache}}
+  \times \mathcal{H}_{\mathrm{int}}.
+\]
+
+\begin{itemize}\itemsep2pt
+  \item $D_{\mathrm{pool}} \in \mathcal{D}_{\mathrm{pool}}$:
+        document pool ( citation papers, keywords, abstracts).
+  \item $D_{\mathrm{draft}} \in \mathcal{D}_{\mathrm{draft}}$:
+        current RW draft (text + accepted / rejected sentences, scores).
+  \item $D_{\mathrm{outline}} \in \mathcal{D}_{\mathrm{outline}}$:
+        RW outline (sections, subsections, topic slots, coverage vector).
+  \item $M_{\mathrm{cache}} \in \mathcal{M}_{\mathrm{cache}}$:
+        shared memory / cache (topic vectors, salience scores, input).
+  \item $H_{\mathrm{int}} \in \mathcal{H}_{\mathrm{int}}$:
+        interaction history (past macro-actions and intermediate rewards).
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Action Space for Multi-Agent RWG (DEC-POSMDP)}
+\vspace{-8mm}
+\small
+
+\[
+\mathcal{A}_i =
+\{ a^{\mathrm{plan}},\;
+   a^{\mathrm{search}},\;
+   a^{\mathrm{read}},\;
+   a^{\mathrm{write}},\;
+   a^{\mathrm{review}} \}.
+\]
+
+\begin{columns}[T,totalwidth=\textwidth]
+
+% ===== LEFT COLUMN =====
+\begin{column}{0.48\textwidth}
+\textbf{Planning} ($a^{\mathrm{plan}}$)
+\begin{itemize}\itemsep1pt
+  \item Update / refine outline.
+  \item Allocate topic slots.
+\end{itemize}
+
+\textbf{Search / Retrieval} ($a^{\mathrm{search}}$)
+\begin{itemize}\itemsep1pt
+  \item Retrieve papers or citation sentences.
+  \item Topic- or graph-guided retrieval.
+\end{itemize}
+
+\textbf{Reading} ($a^{\mathrm{read}}$)
+\begin{itemize}\itemsep1pt
+  \item Read selected papers/spans.
+  \item Produce summaries, key points.
+\end{itemize}
+\end{column}
+
+% ===== RIGHT COLUMN =====
+\begin{column}{0.48\textwidth}
+
+\textbf{Writing} ($a^{\mathrm{write}}$)
+\begin{itemize}\itemsep1pt
+  \item Generate RW sentences/paragraphs.
+  \item Fill outline slots using Reader outputs.
+\end{itemize}
+
+\textbf{Review / Critique} ($a^{\mathrm{review}}$)
+\begin{itemize}\itemsep1pt
+  \item Check coherence, redundancy, factuality.
+  \item Accept/reject/edit generated text.
+\end{itemize}
+
+\vspace{2mm}
+\textbf{Joint Action Space}
+\[
+\mathcal{A} = \mathcal{A}_1 \times \dots \times \mathcal{A}_N.
+\]
+
+\end{column}
+
+\end{columns}
+
+\vfill
+\scriptsize
+\hrulefill\\[0.3em]
+\textit{Macro-actions operate at high semantic level, enabling long-horizon RW generation.}
+\end{frame}
+
+
+\begin{frame}{Observation Vector}
+\vspace{-15mm}
+\begin{columns}[T] % The "T" option aligns the columns at the top
+
+\begin{column}{0.5\textwidth}
+For each action \( a \in \mathcal{A} \), the number of agents \( n_a(t) \) performing that action at time \( t \) is:
+
+\[
+n_a(t) = \sum_{j=1}^{N} \mathbf{1}\{a_j(t) = a\}
+\]
+
+
+The total number of agents \( N \) at time \( t \) is:
+
+\[
+\sum_{a \in \mathcal{A}} n_a(t) = \sum_{a \in \mathcal{A}} n_a(t)
+\]
+\end{column}
+
+\begin{column}{0.5\textwidth}
+Apply the function \( F \) to the ratio of the frequency of each action:
+
+\[
+s_a(t) = F\left( \frac{n_a(t)}{\sum_{b \in \mathcal{A}} n_b(t)} \right)
+\]
+
+
+To ensure that \( s_a(t) \) stays within the range \([0, 1]\), we use the following sigmoid function \( F \):
+
+\[
+F(x) = \frac{1}{1 + e^{-k(x - 0.5)}}
+\]
+\end{column}
+
+\end{columns}
+
+\end{frame}
+
+\begin{frame}[t] % 't' = align columns to top
+\vspace{-1cm}
+\frametitle{Evaluation Setup}
+\scriptsize % Đặt cỡ chữ cơ bản là \scriptsize
+
+\begin{columns}[t] 
+
+    % --- Left Column: Env, Baselines, Metrics ---
+    \begin{column}{0.48\textwidth}
+        \textbf{Environment:}
+        \begin{itemize}[\itemsep=-2pt] % Giảm khoảng cách dòng
+            \item 1x RTX A6000, 64GB RAM; Python 3.9, PyTorch 2.0, Transformers.
+        \end{itemize}
+        \vspace{0.2cm}
+
+        \textbf{Baselines:}
+        \begin{itemize}[\itemsep=-2pt]
+            \item \textbf{Extractive:} Hu \& Wan \textsuperscript{\cite{hu2014automatic}}, RWS-Cit \textsuperscript{\cite{chen2019automatic}}
+            \item \textbf{Abstractive:} ToC-RWG \textsuperscript{\cite{wang2019tocrwg}}, RAG-LLM, MA-RWG \textsuperscript{\cite{liu2025select}}
+        \end{itemize}
+        \vspace{0.2cm}
+
+        \textbf{Metrics:}
+        \begin{itemize}[\itemsep=-2pt]
+            \item ROUGE-1/2/L, Coherence, Novelty, Factuality.
+        \end{itemize}
+        
+    \end{column}
+
+    % --- Right Column: Dataset, LLM Params ---
+    \begin{column}{0.5\textwidth}
+        \textbf{Dataset:}
+        \begin{itemize}[\itemsep=-2pt]
+            \item $\sim$5,000 ML/NLP papers (Full text, Refs, Gold RWs).
+            \item \textbf{Split:} 4k (Train) / 500 (Val) / 500 (Test).
+        \end{itemize}
+        \vspace{0.3cm}
+
+        \textbf{LLM Parameters:}
+        \begin{flushleft}
+        {\tiny % Dùng chữ CỰC NHỎ cho bảng
+            \begin{tabular}{|l|c|}
+            \hline
+            \textbf{Notation} & \textbf{Value} \\
+            \hline
+            $K_{max}$ & 20000 tokens \\
+            $\mu_{cache}$ & 512 tokens \\
+            $\alpha_{in}$ & \$0.001 / 1k tokens \\
+            $\alpha_{out}$ & \$0.003 / 1k tokens \\
+            $T$ & 0.7 \\
+            $\rho$ & 0.95 \\
+            $\theta_{LLM}$ & 7B parameters \\
+            $\tau$ & 100ms \\
+            $\beta$ & 0.05 \\
+            \hline
+            \end{tabular}
+        }
+        \end{flushleft}
+    \end{column}
+
+\end{columns}
+
+% --- Footnotes ---
+\vfill
+{\tiny % Dùng chữ CỰC NHỎ cho footnotes
+\hrulefill\\[0.3em]
+\textsuperscript{\cite{hu2014automatic}}\fullcite{hu2014automatic}\\
+\textsuperscript{\cite{chen2019automatic}}\fullcite{chen2019automatic}\\
+\textsuperscript{\cite{wang2019tocrwg}}\fullcite{wang2019tocrwg}\\
+\textsuperscript{\cite{liu2025select}}\fullcite{liu2025select}
+}
+\end{frame}
+

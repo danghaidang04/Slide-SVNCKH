@@ -1,0 +1,156 @@
+% !TEX program = lualatex
+\documentclass[t, aspectratio=169]{beamer}
+\usepackage[english]{babel}
+\usepackage{amsthm,amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{fontawesome5}
+
+% --- Custom packages for the presentation ---
+\usepackage{tikz}
+\usepackage{calc}
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\usepackage{subcaption}
+\setbeamertemplate{theorems}[numbered]
+\usepackage{booktabs,tabularx}
+\usepackage{csquotes}
+\usepackage[backend=bibtex,style=numeric,maxbibnames=3,sorting=none]{biblatex}
+\usetikzlibrary{calc, shapes.geometric, arrows.meta, positioning, fit}
+\addbibresource{refs.bib}
+\usepackage{graphicx}
+\usepackage{array,multirow}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}m{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{R}[1]{>{\raggedright\arraybackslash}m{#1}}
+\usepackage{enumitem}
+\setlist[itemize]{label=\textcolor{red}{\small$\blacktriangleright$}}
+\setlist[itemize,2]{label=\textcolor{blue!70!black}{\small$\bullet$}}
+\setlist[enumerate]{label=\arabic*.}
+
+\setbeamertemplate{caption}[numbered]
+\captionsetup[table]{position=top}
+\captionsetup[figure]{position=bottom}
+\setbeamerfont{caption}{size=\scriptsize}
+
+\newlength{\slidesourceheight}
+\setlength{\slidesourceheight}{1.6cm}
+\newlength{\slidesourceleft}
+\setlength{\slidesourceleft}{0.35cm}
+\newlength{\slidesourceright}
+\setlength{\slidesourceright}{0.55cm}
+\newlength{\slidesourcebottom}
+\setlength{\slidesourcebottom}{1cm}
+
+\newcommand{\slidesources}[1]{%
+  \par\vspace*{0.05cm}%
+  \vspace*{\slidesourceheight}%
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[
+      anchor=south west,
+      xshift=\slidesourceleft,
+      yshift=\slidesourcebottom,
+      text width=\dimexpr\paperwidth-\slidesourceleft-\slidesourceright\relax,
+      inner sep=0pt,
+      align=left
+    ] at (current page.south west) {%
+      {\raggedright\setlength{\parskip}{0pt}\setlength{\parindent}{0pt}\fontsize{4}{3.2}\selectfont\spaceskip=0.22em plus 0.04em minus 0.02em\xspaceskip=0.22em plus 0.04em minus 0.02em\relax\hrulefill\par\vspace{0.1em}#1\par}%
+    };
+  \end{tikzpicture}%
+}
+
+% --- CẤU HÌNH LỀ ---
+\def\slideContentLeftMargin{0.5cm}
+\def\slideContentRightMargin{1cm}
+\def\hustHeaderHeight{1cm}
+\def\slideContentBotMargin{3.5cm}
+
+\usepackage[blue, 169]{beamerthemeHUST}
+
+\renewcommand{\titlePageTitleX}{-0.5cm}
+\renewcommand{\titlePageTitleY}{-0.5cm}
+% \renewcommand{\titlePageSecondLogoX}{4.25cm}
+% \renewcommand{\titlePageSecondLogoY}{-0.28cm}
+% \renewcommand{\titlePageSecondLogoHeight}{1.7cm}
+% \renewcommand{\titlePageSecondLogoWidth}{4.4cm}
+
+\renewcommand{\hustTitleAlign}{\alignLeft}
+\renewcommand{\hustSubtitleAlign}{\alignLeft}
+\renewcommand{\hustAuthorAlign}{\alignLeft}
+\renewcommand{\hustInstAlign}{\alignLeft}
+
+\title[CREW MARL]{A Collaborative Multi-agent Reinforcement Learning-Based Framework for Automated Related Work Summarization}
+\subtitle{}
+\author[Dang Hai Dang et al.]{Dang Hai Dang, Pham Bao Yen, Nguyen Quang Huy, Do Truong Giang}
+\studentid{}
+\advisor{Prof. Huynh Thi Thanh Binh, Dr. Nguyen Thi Huong}
+% \titlepagesecondlogo{}
+% \titlepagesecondlogotext{43rd HUST Annual Student Research Conference}
+\institute[HUST]{Hanoi University of Science and Technology}
+\date{\today}
+
+\pdfstringdefDisableCommands{%
+  \def\\{ }%
+  \def\textsuperscript#1{ #1}%
+  \def\vspace#1{}%
+  \def\scriptsize{}%
+}
+
+\begin{document}
+	
+
+	
+{
+\setbeamertemplate{background}{%
+    \includegraphics[width=\paperwidth,height=\paperheight]{\hustbg{title}}%
+    \drawHustPageNum
+}
+\begin{frame}[plain]
+    \vspace*{1.95cm} 
+    {\hspace*{0.95cm}\color{red!85!black}\bfseries\fontsize{12}{14}\selectfont 43rd HUST Annual Student Research Conference\par}
+    \vspace{0.5cm}
+    {\hspace*{0.95cm}\parbox{0.78\paperwidth}{%
+        {\hustTitleAlign \fontsize{18}{21}\selectfont \bfseries \color{hustprimary} \inserttitle \par}
+        \vspace{0.3cm}
+        {\hustAuthorAlign
+            {\color{hustprimary} \small \textbf{ID:}}~{\footnotesize S.1.17} \par
+            {\color{hustprimary} \small \textbf{Students:}}~{\footnotesize \insertauthor} \par
+            {\color{hustprimary} \small \textbf{Supervisor:}}~{\footnotesize \insertadvisor} \par
+        }
+        {\hustInstAlign
+            {\footnotesize \color{hustprimary} \bfseries \insertinstitute} \par
+            {\footnotesize \color{black!75} \insertdate \par}
+            \vspace{0.2cm}
+        }
+    }}
+\end{frame}
+}
+	
+
+	
+	\resetPageCount  
+	\showPageNumber  
+	
+	\useStyleHustFull
+	\useThinBar 
+	
+    \section{Introduction}
+    \input{Parts/1.introduction}
+    \section{Related Work}
+    \input{Parts/2.relatedwork}
+
+    \section{Methodology}
+    \input{Parts/4.algorithm}
+    \section{Performance Evaluation}
+    \input{Parts/5.evaluation}
+    \section{Conclusions and Future Work}
+    \input{Parts/6.conclusion}
+    
+    \useStyleLogoOnly 
+    \setbeamertemplate{bibliography item}[text]
+    
+    \begin{frame}[allowframebreaks, label=refs]{References}
+        \tiny
+        \printbibliography[heading=none]
+    \end{frame}
+
+\end{document}
