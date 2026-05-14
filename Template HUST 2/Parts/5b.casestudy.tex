@@ -1,0 +1,47 @@
+\begin{frame}[t]
+\frametitle{Case Study}
+\vspace{2mm}
+
+% Paper Title & Abstract Box
+\begin{beamercolorbox}[wd=\textwidth, sep=3pt, rounded=true]{block title}
+    \scriptsize \textbf{Target Paper:} Robust Non-Rigid Registration of 2D and 3D Graphs
+\end{beamercolorbox}
+\begin{beamercolorbox}[wd=\textwidth, sep=4pt, rounded=true]{block body}
+    \tiny \textbf{Abstract:} We present a new approach to matching graphs in $\mathbb{R}^2$ or $\mathbb{R}^3$. Our method handles partial matches and non-linear deformations using Gaussian Processes, without requiring appearance features or initial alignment... [...]
+\end{beamercolorbox}
+
+\vspace{-1mm}
+\begin{columns}[T, onlytextwidth]
+    % Select-RW (Baseline)
+    \begin{column}{0.48\textwidth}
+        \centering
+        {\scriptsize \color{hustprimary} \textbf{Baseline: Select-RW \cite{liu2025select}}} \par
+        \vspace{1mm}
+        \begin{minipage}[t][4.2cm]{\textwidth}
+            \tiny \raggedright
+            \redhl{Advanced techniques have emerged to overcome these} \redhl{limitations.} One notable approach is the SoftPosit algorithm. \redhl{Despite its effectiveness, the SoftPosit algorithm} \redhl{can still fail} in the presence of clutter or occlusions \redhl{\textbf{[3755653]}}.
+            \vspace{1mm} \par
+            To address these limitations, a recent paper \redhl{proposes an} \redhl{innovative solution} by integrating a GMM to refine pose priors \redhl{\textbf{[3755653]}}. \redhl{This method progressively refines} the pose estimates by hypothesizing correspondences. \redhl{By reducing matches and exploring the pose space} \redhl{more thoroughly,} this approach enhances the robustness and efficiency \redhl{\textbf{[3755653]}}.
+        \end{minipage}
+    \end{column}
+
+    % CREW (Ours)
+    \begin{column}{0.48\textwidth}
+        \centering
+        {\scriptsize \color{hustprimary} \textbf{Ours: CREW}} \par
+        \vspace{1mm}
+        \begin{minipage}[t][4.2cm]{\textwidth}
+            \tiny \raggedright
+            \greenhl{While [28637] and [27485] focus on geometric and} \greenhl{appearance priors,} other methodologies such as spectral methods and deep learning have also been explored. \greenhl{Spectral methods, which leverage the eigenvalues and} \greenhl{eigenvectors of graph Laplacians, offer a powerful tool} for graph matching by capturing the intrinsic structure. \greenhl{These methods are particularly useful for regular} \greenhl{structures where dominant eigenvalues are present.} However, they struggle with nonlinear deformations, which are \greenhl{better handled by geometric approaches in [28637].}
+        \end{minipage}
+    \end{column}
+\end{columns}
+
+\vfill
+\slidesources{%
+    \parbox{\textwidth}{%
+        \fontsize{5pt}{6pt}\selectfont\color{gray}%
+        \hyperlink{refs}{\cite{liu2025select} \fullcite{liu2025select}}%
+    }%
+}
+\end{frame}

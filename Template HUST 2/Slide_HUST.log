@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.3.1)  13 MAY 2026 00:51
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.3.1)  14 MAY 2026 10:17
  restricted system commands enabled.
  file:line:error style messages enabled.
 **"/Users/danghaidang04/CodeSpace/LamSlide/Template HUST 2/Slide_HUST"
@@ -1090,26 +1090,26 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
  (./Slide_HUST.aux)
 \openout1 = Slide_HUST.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1170,57 +1170,57 @@ Package grfext Info: Graphics extension search list:
  (/usr/local/texlive/2026basic/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 98.
+Package hyperref Info: Link coloring OFF on input line 100.
  (./Slide_HUST.out) (./Slide_HUST.out)
 \@outlinefile=\write6
 
 \openout6 = Slide_HUST.out
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 98.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 100.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 98.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 100.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 98.
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 100.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 98.
+(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 100.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmr/m/n on input line 98.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 98.
+(Font)                  OT1/lmss/m/n --> TU/lmr/m/n on input line 100.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> TU/lmss/b/n on input line 98.
+(Font)                  OT1/lmr/bx/n --> TU/lmss/b/n on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/lmss/b/n on input line 98.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 98.
+(Font)                  OT1/lmr/bx/n --> TU/lmss/b/n on input line 100.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 98.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/m/n on input line 98.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 98.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/m/n on input line 100.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> TU/lmss/m/it on input line 98.
+(Font)                  OT1/lmr/m/it --> TU/lmss/m/it on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> TU/lmss/m/it on input line 98.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 98.
+(Font)                  OT1/lmr/bx/it --> TU/lmss/m/it on input line 100.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 98.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 98.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 100.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  TU/lmss/m/n --> TU/lmss/b/n on input line 98.
+(Font)                  TU/lmss/m/n --> TU/lmss/b/n on input line 100.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  TU/lmss/m/it --> TU/lmss/b/it on input line 98.
+(Font)                  TU/lmss/m/it --> TU/lmss/b/it on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/lmss/b/n --> TU/lmr/b/n on input line 98.
+(Font)                  OT1/lmss/b/n --> TU/lmr/b/n on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  TU/lmss/b/n --> TU/lmss/b/n on input line 98.
+(Font)                  TU/lmss/b/n --> TU/lmss/b/n on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  TU/lmss/m/n --> TU/lmss/b/n on input line 98.
+(Font)                  TU/lmss/m/n --> TU/lmss/b/n on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  TU/lmss/m/it --> TU/lmss/b/it on input line 98.
+(Font)                  TU/lmss/m/it --> TU/lmss/b/it on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  TU/lmtt/m/n --> TU/lmtt/b/n on input line 98.
+(Font)                  TU/lmtt/m/n --> TU/lmtt/b/n on input line 100.
  (/usr/local/texlive/2026basic/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -1254,49 +1254,49 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Slide_HUST.bbl' found.
  (./Slide_HUST.bbl)
-Package biblatex Info: Reference section=0 on input line 98.
-Package biblatex Info: Reference segment=0 on input line 98.
+Package biblatex Info: Reference section=0 on input line 100.
+Package biblatex Info: Reference segment=0 on input line 100.
  (./Slide_HUST.nav)
-LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 125.
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 127.
  (/usr/local/texlive/2026basic/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 125.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 127.
  (/usr/local/texlive/2026basic/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 125.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 127.
  (/usr/local/texlive/2026basic/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 125.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 127.
  (/usr/local/texlive/2026basic/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 125.
+(Font)              <10.95> on input line 127.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 125.
+(Font)              <8> on input line 127.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 125.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 125.
+(Font)              <6> on input line 127.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 127.
  (/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 125.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 127.
  (/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 125.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 127.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 125.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 127.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 125.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 127.
 <images/hust-blue-169-title.png, id=33, 963.6pt x 542.025pt>
 File: images/hust-blue-169-title.png Graphic file (type png)
 <use images/hust-blue-169-title.png>
-Package luatex.def Info: images/hust-blue-169-title.png  used on input line 125.
+Package luatex.def Info: images/hust-blue-169-title.png  used on input line 127.
 (luatex.def)             Requested size: 455.2446pt x 256.08334pt.
  [1
 
@@ -1329,25 +1329,23 @@ Package luatex.def Info: images/hust-blue-169-content-hust-full.png  used on inp
  [2
 
 <./images/hust-blue-169-content-hust-full.png><./diagram_final.jpg>]) (./Parts/2.relatedwork.tex
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 16.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 16.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 16.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 16.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 16.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 16.
+<pipeline.jpg, id=65, 7194.88pt x 2376.88pt>
+File: pipeline.jpg Graphic file (type jpg)
+<use pipeline.jpg>
+Package luatex.def Info: pipeline.jpg  used on input line 19.
+(luatex.def)             Requested size: 215.28816pt x 71.12198pt.
+<marl.jpg, id=66, 7194.88pt x 2376.88pt>
+File: marl.jpg Graphic file (type jpg)
+<use marl.jpg>
+Package luatex.def Info: marl.jpg  used on input line 19.
+(luatex.def)             Requested size: 215.28816pt x 71.12198pt.
 File: images/hust-blue-169-content-hust-full.png Graphic file (type png)
 <use images/hust-blue-169-content-hust-full.png>
-Package luatex.def Info: images/hust-blue-169-content-hust-full.png  used on input line 16.
+Package luatex.def Info: images/hust-blue-169-content-hust-full.png  used on input line 19.
 (luatex.def)             Requested size: 455.2446pt x 256.08334pt.
  [3
 
-]) (./Parts/4.algorithm.tex
+<./pipeline.jpg><./marl.jpg>]) (./Parts/4.algorithm.tex
 <architechture_super_final.jpg, id=72, 6424.0pt x 2633.84pt>
 File: architechture_super_final.jpg Graphic file (type jpg)
 <use architechture_super_final.jpg>
@@ -1372,20 +1370,38 @@ Package luatex.def Info: images/hust-blue-169-content-hust-full.png  used on inp
 (luatex.def)             Requested size: 455.2446pt x 256.08334pt.
  [5
 
+]) (./Parts/5b.casestudy.tex
+Overfull \vbox (16.12222pt too high) detected at line 47
+ []
+
+File: images/hust-blue-169-content-hust-full.png Graphic file (type png)
+<use images/hust-blue-169-content-hust-full.png>
+Package luatex.def Info: images/hust-blue-169-content-hust-full.png  used on input line 47.
+(luatex.def)             Requested size: 455.2446pt x 256.08334pt.
+[6
+
 ]) (./Parts/6.conclusion.tex
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 24.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 24.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 24.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 24.
 File: images/hust-blue-169-content-hust-full.png Graphic file (type png)
 <use images/hust-blue-169-content-hust-full.png>
 Package luatex.def Info: images/hust-blue-169-content-hust-full.png  used on input line 24.
 (luatex.def)             Requested size: 455.2446pt x 256.08334pt.
- [6
+ [7
 
 ])
-<images/hust-blue-169-content-logo.png, id=104, 963.6pt x 542.025pt>
+<images/hust-blue-169-content-logo.png, id=115, 963.6pt x 542.025pt>
 File: images/hust-blue-169-content-logo.png Graphic file (type png)
 <use images/hust-blue-169-content-logo.png>
-Package luatex.def Info: images/hust-blue-169-content-logo.png  used on input line 154.
+Package luatex.def Info: images/hust-blue-169-content-logo.png  used on input line 157.
 (luatex.def)             Requested size: 455.2446pt x 256.08334pt.
- [7
+ [8
 
 <./images/hust-blue-169-content-logo.png>]
 \tf@nav=\write7
@@ -1419,19 +1435,19 @@ Package logreq Info: Writing requests to 'Slide_HUST.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 40853 strings out of 476076
+ 40902 strings out of 476076
  100000,1648299 words of node,token memory allocated
- 10766 words of node memory still in use:
-   46 hlist, 10 vlist, 3 rule, 70 disc, 6 local_par, 207 glue, 58 kern, 55 penalty, 768 glyph, 438 attribute, 80 glue_spec, 220 attribute_list, 9 write, 1 save_pos, 17 pdf_literal, 6 pdf_dest, 4 pdf_action, 52 pdf_colorstack nodes
-   avail lists: 1:1,2:1592,3:508,4:306,5:276,6:66,7:5740,8:1,9:697,10:17,11:305
- 62186 multiletter control sequences out of 65536+600000
- 103 fonts using 8638727 bytes
+ 10778 words of node memory still in use:
+   46 hlist, 10 vlist, 3 rule, 70 disc, 6 local_par, 207 glue, 58 kern, 55 penalty, 768 glyph, 440 attribute, 80 glue_spec, 221 attribute_list, 9 write, 1 save_pos, 17 pdf_literal, 6 pdf_dest, 5 pdf_action, 52 pdf_colorstack nodes
+   avail lists: 1:1,2:2153,3:508,4:438,5:430,6:65,7:5740,8:2,9:697,10:25,11:482
+ 62220 multiletter control sequences out of 65536+600000
+ 98 fonts using 8307183 bytes
  101i,13n,101p,1979b,1970s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2026basic/texmf-dist/fonts/opentype/public/lm/lmsans10-oblique.otf>{/usr/local/texlive/2026basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2026basic/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/local/texlive/2026basic/texmf-dist/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/local/texlive/2026basic/texmf-dist/fonts/opentype/public/lm/lmsans8-regular.otf></usr/local/texlive/2026basic/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2026basic/texmf-dist/fonts/opentype/public/lm/lmsans9-regular.otf></usr/local/texlive/2026basic/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Slide_HUST.pdf (7 pages, 5654846 bytes).
+</usr/local/texlive/2026basic/texmf-dist/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/local/texlive/2026basic/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf>{/usr/local/texlive/2026basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2026basic/texmf-dist/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/local/texlive/2026basic/texmf-dist/fonts/opentype/public/lm/lmsans8-regular.otf></usr/local/texlive/2026basic/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2026basic/texmf-dist/fonts/opentype/public/lm/lmsans9-regular.otf></usr/local/texlive/2026basic/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on Slide_HUST.pdf (8 pages, 14709134 bytes).
 
-PDF statistics: 170 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 1048576)
+PDF statistics: 182 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 1048576)
  56 words of extra memory for PDF output out of 10000 (max. 100000000)
 

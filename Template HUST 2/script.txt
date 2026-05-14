@@ -1,0 +1,149 @@
+====================================================================
+SCRIPT THUYẾT TRÌNH - 43rd HUST Annual Student Research Conference
+Đề tài: A Collaborative Multi-agent Reinforcement Learning-Based
+        Framework for Automated Related Work Summarization
+Mã đề tài: S.1.17
+Tổng thời gian mục tiêu: 5 phút (thực tế script: ~4 phút 30 giây)
+====================================================================
+
+
+------------------------------------------------------
+SLIDE 1: TITLE (Mục tiêu: 10s | Script: ~8s)
+------------------------------------------------------
+
+"Kính chào các thầy cô trong ban giám khảo. Ngày hôm nay, nhóm chúng em xin trình bày đề tài mã số
+S.1.17: A Collaborative Multi-agent Reinforcement Learning-Based
+Framework for Automated Related Work Summarization, dưới sự hướng dẫn
+của cô Huỳnh Thị Thanh Bình và cô Nguyễn Thị Hương."
+
+
+------------------------------------------------------
+SLIDE 2: PROBLEM STATEMENT (Mục tiêu: 60s | Script: ~50s)
+------------------------------------------------------
+
+"Bài toán nhóm giải quyết là tự động sinh phần Related Work cho bài
+báo khoa học. Cụ thể, input gồm tiêu đề và abstract của bài báo đích,
+cùng danh sách các bài tham khảo với thông tin title và abstract
+tương ứng. Output cần đạt được là một đoạn Related Work hoàn chỉnh,
+có tính mạch lạc cao và trích dẫn chính xác.
+
+Việc viết Related Work thủ công là một bottleneck lớn trong nghiên cứu.
+Nhà khoa học phải đọc hàng chục bài báo, tổng hợp, so sánh,
+và sắp xếp logic — một quá trình tốn rất nhiều thời gian.
+
+Như hình minh họa, các phương pháp hiện tại đều có hạn chế.
+Nhóm extractive methods chỉ trích xuất câu có sẵn nên thiếu tính
+tổng hợp. Nhóm abstractive methods dựa trên các supervised models cho chất lượng
+cao hơn nhưng chi phí training lớn. Các phương pháp multi-agent LLMs gần đây
+đã chia pipeline thành nhiều giai đoạn, tuy nhiên các agent vẫn
+hoạt động tuần tự và độc lập, thiếu cơ chế phối hợp linh hoạt.
+
+Từ đó, nhóm đặt ra câu hỏi: Làm thế nào để các agent phối hợp
+hiệu quả hơn trong việc sinh Related Work chất lượng cao?"
+
+
+------------------------------------------------------
+SLIDE 3: PROPOSED FRAMEWORK (Mục tiêu: 60s | Script: ~50s)
+------------------------------------------------------
+
+"Để giải quyết bài toán trên, nhóm đề xuất framework CREW.
+
+Ở Figure 1 là pipeline của các phương pháp hiện có. Ta thấy công việc
+được phân chia cứng cho từng agent: agent này chỉ chọn bài,
+agent kia chỉ đọc, agent cuối chỉ viết. Chúng thực hiện tuần tự
+theo thời gian, không có sự tương tác hay phản hồi lẫn nhau.
+
+Ở Figure 2 là framework CREW của nhóm. Điểm khác biệt cốt lõi là
+các agent không bị phân vai cố định mà tự lựa chọn nhiệm vụ tùy vào
+ngữ cảnh, làm việc song song và phối hợp với nhau thông qua học tăng cường
+đa tác tử. Nhóm mô hình hóa bài toán dưới dạng Dec-POMDP, tích hợp cơ chế
+Feedback để đánh giá chéo, kết hợp balanced reward và tối ưu bằng
+Independent PPO với parameter sharing."
+
+
+------------------------------------------------------
+SLIDE 4: ARCHITECTURE (Mục tiêu: 60s | Script: ~50s)
+------------------------------------------------------
+
+"Tiếp theo, em xin đi sâu vào kiến trúc chi tiết của CREW.
+
+Hệ thống nhận **Input** gồm tiêu đề, abstract của bài báo đích cùng danh sách tài liệu tham khảo; và trả ra **Output** là bản thảo Related Work hoàn chỉnh.
+
+Điểm khác biệt của CREW là các agent **không được phân chia chức năng chuyên biệt**. Thay vào đó, mỗi agent sẽ tự lựa chọn (selectively select) hành động phù hợp dựa trên quan sát (observation) đầu vào. Có 4 hành động chính bao gồm:
+1. **Read**: Để đọc và trích xuất thông tin từ tài liệu.
+2. **Global Sharing**: Để chia sẻ tri thức và dữ liệu giữa các agent.
+3. **Writing**: Để trực tiếp thực hiện việc viết văn bản.
+4. **Feedback**: Để đánh giá và phản hồi về chất lượng nội dung.
+
+Cơ chế này giúp các agent phối hợp song song và linh hoạt hơn. Toàn bộ hệ thống được tối ưu hóa bằng thuật toán **Independent PPO** với cơ chế **Parameter Sharing**, giúp tối ưu hóa **Balanced Reward** dựa trên các tiêu chí Coverage, Logic và Relevance."
+
+
+------------------------------------------------------
+SLIDE 5: EXPERIMENTAL SETUP & RESULTS (Mục tiêu: 50s | Script: ~45s)
+------------------------------------------------------
+
+"Về thực nghiệm, nhóm sử dụng dataset OARelatedWork, huấn luyện
+và suy luận trên GPU NVIDIA A100 với mô hình Qwen-32B-Instruct.
+
+Nhóm đánh giá bằng phương pháp LLM-as-a-Judge trên ba tiêu chí:
+Coverage, Logic, và Relevance, so sánh với ba baseline: PRIMERA,
+GPT-4o, và Select-RW.
+
+Nhìn vào Table 1 - Effectiveness: CREW đạt điểm trung bình 3.77,
+vượt trội so với Select-RW ở mức 3.53, tương đương cải thiện
+khoảng 8%. Đồng thời, CREW chỉ sử dụng 153K token, tiết kiệm hơn
+so với Select-RW với 186K token.
+
+Table 2 - Ablation Study cho thấy mỗi thành phần đều đóng góp
+quan trọng. Khi loại bỏ Critique agent, điểm trung bình giảm 0.35.
+Khi loại bỏ Balanced Reward, giảm tới 0.42. Điều này khẳng định
+vai trò thiết yếu của cơ chế đánh giá chéo và reward cân bằng."
+
+
+------------------------------------------------------
+SLIDE 6: CASE STUDY (Mục tiêu: 40s | Script: ~35s)
+------------------------------------------------------
+
+"Để minh họa trực quan, nhóm thực hiện case study trên bài báo
+Robust Non-Rigid Registration of 2D and 3D Graphs.
+
+Bên trái là đoạn Related Work do baseline sinh ra. Các phần bôi đỏ
+và in đậm cho thấy rõ lỗi phổ biến: trích dẫn bị lặp lại quá nhiều
+lần ([3755653]) trong một đoạn văn ngắn, trong khi các ý tưởng
+không được tổng hợp mà chỉ liệt kê rời rạc.
+
+Bên phải là kết quả của CREW. Các phần bôi xanh cho thấy đoạn văn
+có sự liên kết logic rất tốt, biết cách tổng hợp và so sánh giữa
+các phương pháp spectral hay deep learning với các hướng tiếp cận
+geometric, đồng thời chỉ ra được sự ưu việt trong việc xử lý
+nonlinear deformations — điều mà các phương pháp cũ gặp khó khăn."
+
+
+------------------------------------------------------
+SLIDE 7: CONCLUSIONS & FUTURE WORK (Mục tiêu: 30s | Script: ~20s)
+------------------------------------------------------
+
+"Tóm lại, nhóm đã đề xuất CREW - một framework MARL cho bài toán
+tự động sinh Related Work. Kết quả thực nghiệm cho thấy cải thiện
+đáng kể về Coverage, Logic và Relevance so với các baseline hiện có.
+
+Trong tương lai, nhóm dự kiến mở rộng hệ thống bằng cách tích hợp
+thu thập dữ liệu trực tuyến và xây dựng đồ thị tài liệu động.
+
+Xin cảm ơn Ban giám khảo đã lắng nghe!"
+
+
+====================================================================
+TỔNG KẾT THỜI GIAN
+====================================================================
+Slide 1 - Title:                 ~8 giây
+Slide 2 - Problem Statement:    ~50 giây
+Slide 3 - Proposed Framework:   ~50 giây
+Slide 4 - Architecture:         ~50 giây
+Slide 5 - Results:              ~45 giây
+Slide 6 - Case Study:           ~35 giây
+Slide 7 - Conclusions:          ~20 giây
+------------------------------------
+TỔNG:                         ~4 phút 18 giây
+(Dự trù ~42 giây cho chuyển slide, dừng lại, và câu hỏi bất ngờ)
+====================================================================
