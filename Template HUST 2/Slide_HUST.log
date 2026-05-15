@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.3.1)  14 MAY 2026 10:17
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.3.1)  15 MAY 2026 16:49
  restricted system commands enabled.
  file:line:error style messages enabled.
 **"/Users/danghaidang04/CodeSpace/LamSlide/Template HUST 2/Slide_HUST"
@@ -1329,24 +1329,31 @@ Package luatex.def Info: images/hust-blue-169-content-hust-full.png  used on inp
  [2
 
 <./images/hust-blue-169-content-hust-full.png><./diagram_final.jpg>]) (./Parts/2.relatedwork.tex
-<pipeline.jpg, id=65, 7194.88pt x 2376.88pt>
-File: pipeline.jpg Graphic file (type jpg)
-<use pipeline.jpg>
-Package luatex.def Info: pipeline.jpg  used on input line 19.
-(luatex.def)             Requested size: 215.28816pt x 71.12198pt.
-<marl.jpg, id=66, 7194.88pt x 2376.88pt>
-File: marl.jpg Graphic file (type jpg)
-<use marl.jpg>
-Package luatex.def Info: marl.jpg  used on input line 19.
-(luatex.def)             Requested size: 215.28816pt x 71.12198pt.
+<pipeline_s_final.jpg, id=65, 6552.48pt x 2633.84pt>
+File: pipeline_s_final.jpg Graphic file (type jpg)
+<use pipeline_s_final.jpg>
+Package luatex.def Info: pipeline_s_final.jpg  used on input line 23.
+(luatex.def)             Requested size: 350.6392pt x 140.9432pt.
 File: images/hust-blue-169-content-hust-full.png Graphic file (type png)
 <use images/hust-blue-169-content-hust-full.png>
-Package luatex.def Info: images/hust-blue-169-content-hust-full.png  used on input line 19.
+Package luatex.def Info: images/hust-blue-169-content-hust-full.png  used on input line 23.
 (luatex.def)             Requested size: 455.2446pt x 256.08334pt.
  [3
 
-<./pipeline.jpg><./marl.jpg>]) (./Parts/4.algorithm.tex
-<architechture_super_final.jpg, id=72, 6424.0pt x 2633.84pt>
+<./pipeline_s_final.jpg>]
+<marl.jpg, id=71, 7194.88pt x 2376.88pt>
+File: marl.jpg Graphic file (type jpg)
+<use marl.jpg>
+Package luatex.def Info: marl.jpg  used on input line 23.
+(luatex.def)             Requested size: 350.65294pt x 115.8407pt.
+File: images/hust-blue-169-content-hust-full.png Graphic file (type png)
+<use images/hust-blue-169-content-hust-full.png>
+Package luatex.def Info: images/hust-blue-169-content-hust-full.png  used on input line 23.
+(luatex.def)             Requested size: 455.2446pt x 256.08334pt.
+ [4
+
+<./marl.jpg>]) (./Parts/4.algorithm.tex
+<architechture_super_final.jpg, id=77, 6424.0pt x 2633.84pt>
 File: architechture_super_final.jpg Graphic file (type jpg)
 <use architechture_super_final.jpg>
 Package luatex.def Info: architechture_super_final.jpg  used on input line 11.
@@ -1355,7 +1362,7 @@ File: images/hust-blue-169-content-hust-full.png Graphic file (type png)
 <use images/hust-blue-169-content-hust-full.png>
 Package luatex.def Info: images/hust-blue-169-content-hust-full.png  used on input line 11.
 (luatex.def)             Requested size: 455.2446pt x 256.08334pt.
- [4
+ [5
 
 <./architechture_super_final.jpg>]) (./Parts/5.evaluation.tex
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1368,7 +1375,7 @@ File: images/hust-blue-169-content-hust-full.png Graphic file (type png)
 <use images/hust-blue-169-content-hust-full.png>
 Package luatex.def Info: images/hust-blue-169-content-hust-full.png  used on input line 77.
 (luatex.def)             Requested size: 455.2446pt x 256.08334pt.
- [5
+ [6
 
 ]) (./Parts/5b.casestudy.tex
 Overfull \vbox (16.12222pt too high) detected at line 47
@@ -1378,7 +1385,7 @@ File: images/hust-blue-169-content-hust-full.png Graphic file (type png)
 <use images/hust-blue-169-content-hust-full.png>
 Package luatex.def Info: images/hust-blue-169-content-hust-full.png  used on input line 47.
 (luatex.def)             Requested size: 455.2446pt x 256.08334pt.
-[6
+[7
 
 ]) (./Parts/6.conclusion.tex
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1393,15 +1400,15 @@ File: images/hust-blue-169-content-hust-full.png Graphic file (type png)
 <use images/hust-blue-169-content-hust-full.png>
 Package luatex.def Info: images/hust-blue-169-content-hust-full.png  used on input line 24.
 (luatex.def)             Requested size: 455.2446pt x 256.08334pt.
- [7
+ [8
 
 ])
-<images/hust-blue-169-content-logo.png, id=115, 963.6pt x 542.025pt>
+<images/hust-blue-169-content-logo.png, id=120, 963.6pt x 542.025pt>
 File: images/hust-blue-169-content-logo.png Graphic file (type png)
 <use images/hust-blue-169-content-logo.png>
 Package luatex.def Info: images/hust-blue-169-content-logo.png  used on input line 157.
 (luatex.def)             Requested size: 455.2446pt x 256.08334pt.
- [8
+ [9
 
 <./images/hust-blue-169-content-logo.png>]
 \tf@nav=\write7
@@ -1435,19 +1442,19 @@ Package logreq Info: Writing requests to 'Slide_HUST.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 40902 strings out of 476076
+ 40911 strings out of 476076
  100000,1648299 words of node,token memory allocated
  10778 words of node memory still in use:
    46 hlist, 10 vlist, 3 rule, 70 disc, 6 local_par, 207 glue, 58 kern, 55 penalty, 768 glyph, 440 attribute, 80 glue_spec, 221 attribute_list, 9 write, 1 save_pos, 17 pdf_literal, 6 pdf_dest, 5 pdf_action, 52 pdf_colorstack nodes
    avail lists: 1:1,2:2153,3:508,4:438,5:430,6:65,7:5740,8:2,9:697,10:25,11:482
- 62220 multiletter control sequences out of 65536+600000
+ 62224 multiletter control sequences out of 65536+600000
  98 fonts using 8307183 bytes
  101i,13n,101p,1979b,1970s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026basic/texmf-dist/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/local/texlive/2026basic/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf>{/usr/local/texlive/2026basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2026basic/texmf-dist/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/local/texlive/2026basic/texmf-dist/fonts/opentype/public/lm/lmsans8-regular.otf></usr/local/texlive/2026basic/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2026basic/texmf-dist/fonts/opentype/public/lm/lmsans9-regular.otf></usr/local/texlive/2026basic/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Slide_HUST.pdf (8 pages, 14709134 bytes).
+Output written on Slide_HUST.pdf (9 pages, 15351221 bytes).
 
-PDF statistics: 182 PDF objects out of 1000 (max. 8388607)
- 133 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 1048576)
+PDF statistics: 187 PDF objects out of 1000 (max. 8388607)
+ 137 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 1048576)
  56 words of extra memory for PDF output out of 10000 (max. 100000000)
 

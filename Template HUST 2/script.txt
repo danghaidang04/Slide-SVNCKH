@@ -43,7 +43,7 @@ hiệu quả hơn trong việc sinh Related Work chất lượng cao?"
 
 
 ------------------------------------------------------
-SLIDE 3: PROPOSED FRAMEWORK (Mục tiêu: 60s | Script: ~50s)
+SLIDE 3: SOLUTION (Mục tiêu: 60s | Script: ~50s)
 ------------------------------------------------------
 
 "Để giải quyết bài toán trên, nhóm đề xuất framework CREW.
@@ -138,7 +138,7 @@ TỔNG KẾT THỜI GIAN
 ====================================================================
 Slide 1 - Title:                 ~8 giây
 Slide 2 - Problem Statement:    ~50 giây
-Slide 3 - Proposed Framework:   ~50 giây
+Slide 3 - Solution:             ~50 giây
 Slide 4 - Architecture:         ~50 giây
 Slide 5 - Results:              ~45 giây
 Slide 6 - Case Study:           ~35 giây
